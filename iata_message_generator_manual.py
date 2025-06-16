@@ -13,8 +13,8 @@ with st.form("manual_form"):
     dep_airport = col4.text_input("Departure Airport").upper()
 
     col5, col6, col7, col8 = st.columns(4)
-    ad_time = col5.text_input("Actual Departure Time (e.g., 0453)").upper()
-    aa_time = col6.text_input("Actual Arrival Time (e.g., 0501)").upper()
+    ad_time = col5.text_input("Chocks off Time (e.g., 0453)").upper()
+    aa_time = col6.text_input("Airborne Time (e.g., 0501)").upper()
     ea_time = col7.text_input("Estimated Arrival Time (e.g., 0643)").upper()
     arr_airport = col8.text_input("Arrival Airport").upper()
 
@@ -29,9 +29,9 @@ with st.form("manual_form"):
     st.subheader("LDM Details")
     pax_load_info = st.text_input("Pax Load Info (e.g., 18BC374Y.2/9)").upper()
     ldm_dest = st.text_input("Destination (e.g., CAI)").upper()
-    bag_info = st.text_input("Bags/Pax Info (e.g., 138/08/01)").upper()
+    bag_info = st.text_input("Pax Info (e.g., 138/08/01)").upper()
     bag_weight = st.text_input("Total Bags Weight (e.g., 3093)").upper()
-    pos_info = st.text_input("Position Info (e.g., 1/1400.3/1000.4/693.5/00)").upper()
+    pos_info = st.text_input("Positions Info (e.g., 1/1400.3/1000.4/693.5/00)").upper()
     pax_count = st.text_input("PAX Counts (e.g., 0/104)").upper()
     pad_count = st.text_input("PAD Counts (e.g., 0/0)").upper()
     ldm_si = st.text_input("LDM SI Line (e.g., FRE 0 POS 0 C 00 BAG 3093 EIC 00 TRA)").upper()
